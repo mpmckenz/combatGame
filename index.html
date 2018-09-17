@@ -4,9 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Combat!</title>
 </head>
-<body>
+<header>
+    <h2>Battle to the Death!</h2>
+    <div class="units" width="360">
+        <h3 class="unit">
+            <img src="style/paladin.jpg" width="90" height="150">
+            <p><u>Lord Farkas The Brave</u></p>
+            <p>Class: Paladin</p>
+            <p>Health: 110</p>
+            <p>Critical Hit Chance: 9%</p>
+            <p>Accuracy: 58%</p>
+            <p>Weapon: Long Sword of Light</p>
+            <p>Damage: 17</p> 
+            <p id="paladinCurrentHealth">120</p>
+        </h3>
+        <h3 class="unit">
+            <img src="style/barbarian.jpg" width="90" height="150">
+            <p><u>Gruulvik The Raider</u></p>
+            <p>Class: Barbarian</p>
+            <p>Health: 120</p>
+            <p>Critical Hit Chance: 4%</p>
+            <p>Accuracy: 53%</p>
+            <p>Weapon: Cursed Battleaxe</p>
+            <p>Damage: 19</p> 
+            <p id="barbarianCurrentHealth">120</p>
+        </h3>
+        <h3 class="unit">
+            <img src="style/wizard.jpg" width="90" height="150">
+            <p><u>Astrial The Wise</u></p>
+            <p>Class: Wizard</p>
+            <p>Health: 80</p>
+            <p>Critical Hit Chance: 86%</p>
+            <p>Accuracy: 66%</p>
+            <p>Weapon: Cataclysmic Staff</p>
+            <p>Damage: 9</p> 
+            <p id="wizardCurrentHealth">80</p>
+        </h3>
+        <h3 class="unit">
+            <img src="style/ranger.png" width="90" height="150">
+            <p><u>Xavamor The Ghost</u></p>
+            <p>Class: Ranger</p>
+            <p>Health: 100</p>
+            <p>Critical Hit Chance: 90%</p>
+            <p>Accuracy: 80%</p>
+            <p>Weapon: Elder Bow</p>
+            <p>Damage: 4</p> 
+            <p id="rangerCurrentHealth">100</p>
+        </h3>
+        <!-- <h3 class="enemies">
+            <img src="style/goblin.jpg" width="90" heights="150">
+            <p><u>Goblins of the Red Crag</u></p>
+            <p>Class: Goblin</p>
+            <p>Health: 30</p>
+            <p>Critical Hit Chance: 0.1</p>
+            <p>Accuracy: 55%</p>
+            <p>Weapon: dagger</p>
+            <p>Damage: 6</p>
+            <p id="goblinCurrentHealth">30</p>
+            <p id="goblin1CurrentHealth">30</p>
+            <p id="goblin2CurrentHealth">30</p>
+            <p id="goblin3CurrentHealth">30</p>
+            <p id="goblin4CurrentHealth">30</p>
+            <p id="goblin5CurrentHealth">30</p>
+            <p id="goblin6CurrentHealth">30</p>
+        </h3> -->
+    </div>
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+    </header>
+    <body>
+        <h3>Clan Battle!</h3>
+        <button id="fightButton">Battle Clan</button>
+    <br>
+    <!-- <h3>Choose your hero and fight a horde of goblins!</h3>
+    <select id="myHeroSelection">
+            <option>Paladin</option>
+            <option>Barbarian</option>
+            <option>Wizard</option>
+            <option>Ranger</option>
+          </select>
+
+    <button id="goblinFightButton">Fight Goblins</button> -->
+    <!-- <button id="healthPotionButton">Use Potion</button> -->
+    <br>
+    <button id="resetbutton">Reset Game</button>
+    <main id="combatMessage"></main>
+    <script src="creatureClass.js"></script>
     <script src="script.js"></script>
+    <!-- <button id="paladinVSgoblin">Paladin V.S. Goblin</button> -->
+    <!-- <script src="characterClass.js"></script> -->
+    <!-- <script src="gameLogic.js"></script> -->
 </body>
 </html>
